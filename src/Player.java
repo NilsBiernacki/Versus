@@ -4,10 +4,20 @@ public class Player {
 	private int health;
 	private int attack;
 	private String color;
+        private int diceValue;
+
+    public int getDiceValue() {
+        return diceValue;
+    }
+
+    public void setDiceValue(int diceValue) {
+        this.diceValue = diceValue;
+    }
 	
 	public Player(String color){
 		this.setHealth(100);
 		this.setAttack(25);
+                this.color = color;
 	}
 	
 	public void hit(Player enemy){

@@ -24,6 +24,12 @@ public class EventLogger {
 		}
 	}
         
+        void printPlayersActionInfo(Player p) {
+            /**
+             * In future here will be list of all moves the player can execute.
+             */
+        }
+        
         void printPlayersAction(Player p) {
             if (p.getColor().equals("ROT")) {
                         System.out.println("Hey ROT, es wird Zeit BLAU eine Abreibung zu verpassen!\n"
