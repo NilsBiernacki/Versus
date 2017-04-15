@@ -5,7 +5,15 @@ import java.util.Scanner;
 public class InputManager {
     private static Scanner scanner = new Scanner(System.in);
     
-    private static void readKey(char sign) {
+    public static boolean checkInputKey(char sign) {
         
+        String var = scanner.next();
+        if (var.equals(sign)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+         
     }
 }

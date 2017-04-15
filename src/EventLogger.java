@@ -10,17 +10,17 @@ public class EventLogger {
 		if (p.getColor().equals("ROT")) {
 			System.out.println("Zeit die Würfel zu rollen. ROT du bist drann, drücke 'w' um zu würfeln.");
 		}
-		else if(p.getColor().equals("BLUE")) {
+		else if(p.getColor().equals("BLAU")) {
 			System.out.println("OK BLAU, nun bist du am Zug. Viel Glück beim Würfeln. Drücke 'w' um zu würfeln.");
 		}
 	}
 	
-	void printPlayersDiceValue(Player p, int diceValue) {
+	void printPlayersDiceValue(Player p) {
 		if (p.getColor().equals("ROT")) {
-			System.out.println("Hey ROT, du haste eine " + diceValue + " gewürfelt.");
+			System.out.println("Hey ROT, du haste eine " + p.getDiceValue() + " gewürfelt.");
 		}
 		if (p.getColor().equals("BLAU")) {
-			System.out.println("BLAU, du hast die " + diceValue + " gewürfelt.");
+			System.out.println("BLAU, du hast die " + p.getDiceValue() + " gewürfelt.");
 		}
 	}
         
